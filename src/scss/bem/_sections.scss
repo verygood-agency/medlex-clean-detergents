@@ -1,0 +1,8 @@
+.section {
+  overflow: hidden;
+  position: relative;
+  &--custom {
+    margin: 15px 24px;
+    border-radius: 24px;
+  }
+}

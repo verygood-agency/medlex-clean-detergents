@@ -1,9 +1,11 @@
 .first-screen {
-  background-image: linear-gradient(120deg, #F2F17A 0%, #F2F17A 50%, #A78DE1 50%, #A78DE1 100%);
-  border-radius: 24px;
+  background-image: linear-gradient(120deg, #f2f17a 0%, #f2f17a 50%, #a78de1 50%, #a78de1 100%);
+
   padding: 70px 0;
+  position: relative;
+  z-index: 2;
   &__logo {
-    background: #FFFFFF;
+    background: #ffffff;
     border-radius: 50%;
     width: 188px;
     height: 188px;
@@ -15,5 +17,52 @@
       flex-shrink: 0;
       max-width: 132px;
     }
+  }
+  &__bg-images {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    img {
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    // .layer {
+    //   transform: translateX(-50%) translateY(-50%);
+    // }
+    .layer-1 {
+      right: 5%;
+      top: -16%;
+    }
+    .layer-2 {
+      right: 25%;
+      // top: -13%;
+    }
+    .layer-3 {
+      right: 10%;
+      // top: -13%;
+    }
+    .layer-4 {
+      right: 44%;
+      bottom: -70px;
+      top: auto;
+    }
+    .layer-5 {
+      right: 43%;
+      top: -1%;
+  }
+  }
+
+  .title {
+    max-width: 420px;
+    margin-bottom: 24px;
+  }
+  .subtitle {
+    max-width: 420px;
   }
 }
