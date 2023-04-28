@@ -1,10 +1,41 @@
-// "Rubik", sans-serif
-// @font-face {
-//   font-display: swap;
-//   font-family: "Rubik";
-//   src: local("Rubik"), local("Rubik-Regular"),
-//   url("../fonts/Rubik.woff2") format("woff2"),
-//   url("../fonts/Rubik.woff") format("woff");
-//   font-weight: 400;
-//   font-style: normal;
-// }
+// DIN Pro 700
+@font-face {
+  font-display: swap;
+  font-family: "DIN Pro";
+  src: local("DIN Pro"), local("Rubik-Regular"),
+  url("../fonts/DIN Pro/DINPro-Bold.woff2") format("woff2"),
+  url("../fonts/DIN Pro/DINPro-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
+// DIN Pro 400
+@font-face {
+  font-display: swap;
+  font-family: "DIN Pro";
+  src: local("DIN Pro"), local("Rubik-Regular"),
+  url("../fonts/DIN Pro/DINPro.woff2") format("woff2"),
+  url("../fonts/DIN Pro/DINPro.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+// DIN Pro 500
+@font-face {
+  font-display: swap;
+  font-family: "DIN Pro";
+  src: local("DIN Pro"), local("Rubik-Regular"),
+  url("../fonts/DIN Pro/DINPro-Medium.woff2") format("woff2"),
+  url("../fonts/DIN Pro/DINPro-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+// Century Gothic 700
+@font-face {
+  font-display: swap;
+  font-family: "Century Gothic";
+  src: local("Century Gothic"), local("Rubik-Regular"),
+  url("../fonts/CenturyGothic/CenturyGothic-Bold.woff2") format("woff2"),
+  url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+}
