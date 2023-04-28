@@ -4,30 +4,21 @@ document.addEventListener("DOMContentLoaded", () => {
   document.addEventListener('click', e => console.log(e.target));
 
 
-  const elem = document.querySelector('.first-screen__bg-images');
-  elem.addEventListener('mousemove', parallax);
-
+  const imgGroup = document.querySelector('.first-screen__bg-images');
   function parallax(e) {
-    const mouseX = e.clientX;
-    const mouseY = e.clientY;
-    const depth = `${50 - mouseX * 0.01}% ${50 - mouseY * 0.01}%`;
-
-    elem.querySelectorAll('.layer').forEach(layer => {
+    this.querySelectorAll('.layer').forEach(layer => {
       const speed = layer.getAttribute('data-speed');
-      const x = (50 - mouseX * speed * 0.01);
-      const y = (50 - mouseY * speed * 0.01);
+      console.log('Событие есть!');
+      const x = (window.innerWidth - e.pageX * speed) / 100;
+      const y = (window.innerHeight - e.pageY * speed) / 100;
 
-      const style = getComputedStyle(layer);
-      const left = parseFloat(style.left);
-      const top = parseFloat(style.top);
+      layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+    })
+  };
 
-      layer.style.transform = `translateX(${x + left}px) translateY(${y + top}px)`;
-    });
-
-    elem.style.backgroundPosition = depth;
+  if (screen.width > 1024) {
+      document.addEventListener('mousemove', parallax);
   }
-
-
 
 });
 
