@@ -1,5 +1,6 @@
 .first-screen {
   background-image: linear-gradient(120deg, #f2f17a 0%, #f2f17a 50%, #a78de1 50%, #a78de1 100%);
+  overflow: initial;
 
   padding: 70px 0;
   position: relative;
@@ -32,38 +33,32 @@
       top: 0;
       right: 0;
     }
-    // .layer {
-    //   transform: translateX(-50%) translateY(-50%);
-    // }
+
     .layer {
-      animation: float 4s ease-in-out infinite;
+      transform: translate(var(--parallaxX, 0), calc(var(--parallaxY, 0) + var(--floatY, 0)));
     }
     .layer-1 {
       right: 5%;
       top: -16%;
-      animation: float 5s ease-in-out infinite;
     }
     .layer-2 {
       right: 25%;
-      // top: -13%;
-      animation: float 3s ease-in-out infinite;
     }
     .layer-3 {
       right: 10%;
-      // top: -13%;
-      animation: float 1s ease-in-out infinite;
     }
     .layer-4 {
       right: 44%;
       bottom: -70px;
       top: auto;
-      animation: float 4s ease-in-out infinite;
     }
     .layer-5 {
       right: 43%;
-      top: -1%;
-      animation: float 6s ease-in-out infinite;
-  }
+      top: -7%;
+    }
+    .layer-6 {
+      right: -16%;
+    }
   }
 
   .title {
