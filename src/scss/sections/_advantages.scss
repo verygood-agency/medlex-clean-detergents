@@ -1,0 +1,31 @@
+.advantages {
+  background-color: #fff;
+  position: relative;
+  z-index: 2;
+  padding: 93px 0;
+
+  .title {
+
+  }
+
+  &__grid {
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: flex-start;
+  }
+
+  &__item {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #000000;
+    display: grid;
+    grid-template-columns: 96px 1fr;
+    gap: 32px;
+    align-items: center;
+    p {
+      margin: 0;
+    }
+  }
+}
