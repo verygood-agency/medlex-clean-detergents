@@ -5,20 +5,34 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   const imgGroup = document.querySelector('.first-screen__bg-images');
-  function parallax(e) {
-    this.querySelectorAll('.layer').forEach(layer => {
-      const speed = layer.getAttribute('data-speed');
-      console.log('Событие есть!');
-      const x = (window.innerWidth - e.pageX * speed) / 100;
-      const y = (window.innerHeight - e.pageY * speed) / 100;
+const imgPositions = {};
 
-      layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
-    })
-  };
+function updateImgPositions() {
+  imgGroup.querySelectorAll('.layer').forEach(layer => {
+    imgPositions[layer] = {
+      x: layer.offsetLeft + layer.offsetWidth / 2,
+      y: layer.offsetTop + layer.offsetHeight / 2,
+    };
+  });
+}
 
-  if (screen.width > 1024) {
-      document.addEventListener('mousemove', parallax);
-  }
+function parallax(e) {
+  imgGroup.querySelectorAll('.layer').forEach(layer => {
+    const speed = layer.getAttribute('data-speed');
+    const pos = imgPositions[layer];
+    const x = (pos.x - e.pageX) * speed / 100;
+    const y = (pos.y - e.pageY) * speed / 100;
+
+    layer.style.transform = `translate(${x}px, ${y}px)`;
+  });
+};
+
+if (screen.width > 1024) {
+  updateImgPositions();
+  document.addEventListener('mousemove', parallax);
+  window.addEventListener('resize', updateImgPositions);
+}
+
 
 });
 
