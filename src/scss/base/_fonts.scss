@@ -1,30 +1,35 @@
-// DIN Pro 700
 @font-face {
-  font-display: swap;
-  font-family: "DIN Pro";
-  src: local("DIN Pro"), local("Rubik-Regular"),
-  url("../fonts/DIN Pro/DINPro-Bold.woff2") format("woff2"),
-  url("../fonts/DIN Pro/DINPro-Bold.woff") format("woff");
-  font-weight: 700;
+  font-family: 'DIN Pro';
+  src: url('fonts/DINPro/DINPro.eot');
+  src: local('DIN Pro'), local('DINPro'),
+      url('fonts/DINPro/DINPro.eot?#iefix') format('embedded-opentype'),
+      url('fonts/DINPro/DINPro.woff2') format('woff2'),
+      url('fonts/DINPro/DINPro.woff') format('woff'),
+      url('fonts/DINPro/DINPro.ttf') format('truetype');
+  font-weight: normal;
   font-style: normal;
 }
-// DIN Pro 400
+
 @font-face {
-  font-display: swap;
-  font-family: "DIN Pro";
-  src: local("DIN Pro"), local("Rubik-Regular"),
-  url("../fonts/DIN Pro/DINPro.woff2") format("woff2"),
-  url("../fonts/DIN Pro/DINPro.woff") format("woff");
-  font-weight: 400;
+  font-family: 'DIN Pro';
+  src: url('fonts/DINPro/DINPro-Bold.eot');
+  src: local('DIN Pro Bold'), local('DINPro-Bold'),
+      url('fonts/DINPro/DINPro-Bold.eot?#iefix') format('embedded-opentype'),
+      url('fonts/DINPro/DINPro-Bold.woff2') format('woff2'),
+      url('fonts/DINPro/DINPro-Bold.woff') format('woff'),
+      url('fonts/DINPro/DINPro-Bold.ttf') format('truetype');
+  font-weight: bold;
   font-style: normal;
 }
-// DIN Pro 500
+
 @font-face {
-  font-display: swap;
-  font-family: "DIN Pro";
-  src: local("DIN Pro"), local("Rubik-Regular"),
-  url("../fonts/DIN Pro/DINPro-Medium.woff2") format("woff2"),
-  url("../fonts/DIN Pro/DINPro-Medium.woff") format("woff");
+  font-family: 'DIN Pro';
+  src: url('fonts/DINPro/DINPro-Medium.eot');
+  src: local('DIN Pro Medium'), local('DINPro-Medium'),
+      url('fonts/DINPro/DINPro-Medium.eot?#iefix') format('embedded-opentype'),
+      url('fonts/DINPro/DINPro-Medium.woff2') format('woff2'),
+      url('fonts/DINPro/DINPro-Medium.woff') format('woff'),
+      url('fonts/DINPro/DINPro-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
@@ -33,7 +38,7 @@
 @font-face {
   font-display: swap;
   font-family: "Century Gothic";
-  src: local("Century Gothic"), local("Rubik-Regular"),
+  src: local("Century Gothic"), local("CenturyGothic-Bold"),
   url("../fonts/CenturyGothic/CenturyGothic-Bold.woff2") format("woff2"),
   url("../fonts/CenturyGothic/CenturyGothic-Bold.woff") format("woff");
   font-weight: 700;
