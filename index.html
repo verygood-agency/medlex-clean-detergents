@@ -14,35 +14,34 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
 
-  <link rel="stylesheet" href="dist/libs/normalize.min.css">
-  <link rel="stylesheet" href="dist/css/main.min.css">
+  <link rel="stylesheet" href="libs/normalize.min.css">
+  <link rel="stylesheet" href="css/main.css">
 
 </head>
 
 <body>
   <main>
     <!-- первый экран -->
-    <section class="first-screen section section--custom">
+    <section class="first-screen">
       <div class="wrapper">
         <!-- семантичный заголовок -->
         <h1 class="visually-hidden">Моющие средства Medlex</h1>
 
         <div class="first-screen__logo">
-          <img src="dist/img/logo/medlex.svg" alt="">
+          <img src="img/logo/medlex.svg" alt="" loading="lazy">
         </div>
         <p class="title">Убрать дома&nbsp;-<br>легко и&nbsp;безопасно</p>
         <p class="subtitle">Профессиональная забота о&nbsp;гигиене вместе с&nbsp;Medlex</p>
 
-        <!-- <img src="./img/bg/hero.png" alt="">  -->
       </div>
 
       <div class="first-screen__bg-images parallax-enabled">
-        <img class="layer layer-1" src="dist/img/first-screen/1.png" data-float-period="5">
-        <img class="layer layer-2" src="dist/img/first-screen/2.png" data-float-period="3">
-        <img class="layer layer-3" src="dist/img/first-screen/3.png" data-float-period="4">
-        <img class="layer layer-4" src="dist/img/first-screen/4.png" data-float-period="3">
-        <img class="layer layer-5" src="dist/img/first-screen/5.png" data-float-period="5">
-        <img class="layer layer-6" src="dist/img/first-screen/6.png" data-float-period="4">
+        <img class="layer layer-1" src="img/first-screen/1.png" data-float-period="5">
+        <img class="layer layer-2" src="img/first-screen/2.png" data-float-period="3">
+        <img class="layer layer-3" src="img/first-screen/3.png" data-float-period="4">
+        <img class="layer layer-4" src="img/first-screen/4.png" data-float-period="3">
+        <img class="layer layer-5" src="img/first-screen/5.png" data-float-period="5">
+        <img class="layer layer-6" src="img/first-screen/6.png" data-float-period="4">
       </div>
 
 
@@ -57,27 +56,27 @@
           <p class="title">Моющие средства Medlex – это:</p>
 
           <div class="advantages__item">
-            <img src="dist/img/advantages/1.jpg" alt="фото">
+            <img src="img/advantages/1.jpg" alt="фото" loading="lazy">
             <p>Чистый дом без усилий и уборка в удовольствие</p>
           </div>
 
           <div class="advantages__item">
-            <img src="dist/img/advantages/2.jpg" alt="фото">
+            <img src="img/advantages/2.jpg" alt="фото" loading="lazy">
             <p>Забота о безопасности всей семьи и не только</p>
           </div>
 
           <div class="advantages__item">
-            <img src="dist/img/advantages/3.jpg" alt="фото">
+            <img src="img/advantages/3.jpg" alt="фото" loading="lazy">
             <p>Формулы средств, выверенные с медицинской точностью</p>
           </div>
 
           <div class="advantages__item">
-            <img src="dist/img/advantages/4.jpg" alt="фото">
+            <img src="img/advantages/4.jpg" alt="фото" loading="lazy">
             <p>Удобные форматы с распылителями / дозаторами / мерными колпачками</p>
           </div>
 
           <div class="advantages__item">
-            <img src="dist/img/advantages/5.jpg" alt="фото">
+            <img src="img/advantages/5.jpg" alt="фото" loading="lazy">
             <p>ЧСтильный и лаконичный дизайн, прекрасно вписывающийся в любой интерьер</p>
           </div>
         </div>
@@ -85,106 +84,506 @@
 
       </div>
     </section>
-    <!-- карточки товара -->
-    <section class="product-cards">
+    <!-- карточка товара -->
+    <section class="product-card product-card--1">
       <div class="wrapper">
-        <h2 class="visually-hidden">Список моющих средств</h2>
-        <ul class="product-cards__list">
-          <!-- отдельная карточка -->
-          <li class="product-item">
+        <div class="product-card__grid">
 
-            <div class="catalog__item-grid">
+          <div class="product-card__photo">
+            <img src="img/product-cards/1.png" alt="фото" loading="lazy">
+          </div>
 
-              <div class="catalog__photo">
-                <img src="img/product-cards/1.png" alt="фото">
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
               </div>
-
-              <div class="catalog__details">
-                <h2 class="title">Гипоаллергенный гель
-                  для мытья посуды</h2>
-
-                <p class="subtitle">Применяется для ежедневного ухода за посудой и детскими принадлежно стями из любых материалов и покрытий: фаянса, фарфора, стекла, керамики, пластика, металла, эмали, тефлона, силикона, дерева. Безопасно для детской посуды, бутылочек, сосок, грызунков, прорезывателей. Не раздражаети не сушит кожу рук.</p>
-
-                <ul class="catalog__benefits">
-                  <li>
-                    <img src="/img/icon/1.svg" alt="иконка" width="64">
-                    <p>Гипоаллергенная безопасная формула. Без отдушек и красителей</p>
-                  </li>
-
-                  <li>
-                    <img src="/img/icon/2.svg" alt="иконка" width="64">
-                    <p>Удобный формат. Легко и быстро наносится
-                    </p>
-                  </li>
-
-                  <li>
-                    <img src="/img/icon/3.svg" alt="иконка" width="64">
-                    <p>Содержит антибактериальные компоненты</p>
-                  </li>
-
-                  <li>
-                    <img src="/img/icon/4.svg" alt="иконка" width="64">
-                    <p>Устраняет неприятные запахи</p>
-                  </li>
-                </ul>
-
-
-                <div class="where-buy">
-                  <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
-                  <ul class="where-buy__list">
-                    <li>
-                      <div class="where-buy__image">
-                        <img src="/img/wildberies-logo.png" alt="логотип" width="176">
-                      </div>
-                      <a class="button button--white"
-                        href="https://www.wildberries.ru/catalog/120459759/detail.aspx?targetUrl=XS"
-                        target="_blank">посетить
-                        сайт</a>
-                    </li>
-
-                    <li>
-                      <div class="where-buy__image">
-                        <img src="/img/ozon-logo.png" alt="логотип" width="176">
-                      </div>
-                      <a class="button button--white"
-                        href="https://www.ozon.ru/product/sprey-shampun-dlya-sobak-2-v-1-710662850/"
-                        target="_blank">посетить
-                        сайт</a>
-                    </li>
-
-                    <li>
-                      <div class="where-buy__image">
-                        <img src="/img/svetofor-logo-sm.png" alt="логотип" width="176">
-                      </div>
-                      <a class="button button--white" href="https://svetofor.market/" target="_blank">посетить сайт</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-
             </div>
 
-          </li>
 
-        </ul>
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
 
       </div>
     </section>
+
+    <!-- карточка товара -->
+    <section class="product-card product-card-reverse">
+      <div class="wrapper">
+        <div class="product-card__grid">
+
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
+              </div>
+            </div>
+
+
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-card__photo">
+            <img src="img/product-cards/2.png" alt="фото" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- карточка товара -->
+    <section class="product-card product-card--2">
+      <div class="wrapper">
+        <div class="product-card__grid">
+
+          <div class="product-card__photo">
+            <img src="img/product-cards/3.png" alt="фото" loading="lazy">
+          </div>
+
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
+              </div>
+            </div>
+
+
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- карточка товара -->
+    <section class="product-card product-card-reverse">
+      <div class="wrapper">
+        <div class="product-card__grid">
+
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
+              </div>
+            </div>
+
+
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-card__photo">
+            <img src="img/product-cards/4.png" alt="фото" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- карточка товара -->
+    <section class="product-card product-card--3">
+      <div class="wrapper">
+        <div class="product-card__grid">
+
+          <div class="product-card__photo">
+            <img src="img/product-cards/5.png" alt="фото" loading="lazy">
+          </div>
+
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
+              </div>
+            </div>
+
+
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- карточка товара -->
+    <section class="product-card product-card-reverse">
+      <div class="wrapper">
+        <div class="product-card__grid">
+
+          <div class="product-card__details">
+            <h2 class="product-card__title title">Универсальное моющее средство для уборки после ремонта</h2>
+
+            <p class="product-card__subtitle">
+              <b>C активной формулой Medlex Acid Complex 3</b>
+              Применяется для генеральной уборки после ремонта: для очистки любых
+              поверхностей из кислотостойких материалов от следов цемента, шпаклевки,
+              плиточного и обойного клея, затирки для швов, краски, ржавчины.
+            </p>
+
+            <ul class="product-card__benefits">
+              <li><span>Легко и быстро смывается</span>
+              </li>
+              <li><span>Усиленная формула</span>
+              </li>
+              <li><span>Не оставляет разводов</span>
+              </li>
+
+            </ul>
+            <div class="product-cards__promo--wrap">
+              <div class="product-cards__promo">
+                Устранение следов цемента, шпаклевки, клея и краски с полов, стен, окон и фасадов
+              </div>
+            </div>
+
+
+            <div class="where-buy">
+              <h3 class="where-buy__title">Наши средства можно приобрести:</h3>
+              <ul class="where-buy__list">
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/wb.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a class="where-buy__link" href="#" target="_blank">
+                    <div class="where-buy__image">
+                      <img src="img/logo/oz.png" alt="логотип" width="176" loading="lazy">
+                    </div>
+                    <span class="where-buy__button">посетить сайт</span>
+                  </a>
+                </li>
+
+              </ul>
+            </div>
+          </div>
+
+          <div class="product-card__photo">
+            <img src="img/product-cards/6.png" alt="фото" loading="lazy">
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
     <!-- цены на товары -->
     <section class="prices">
       <div class="wrapper">
-        <h2 class="title">Цены и покупка</h2>
-        <!-- отдельная карточка -->
+        <h2 class="prices__title title">Цены и покупка</h2>
         <ul class="prices__list">
+          <!-- Карточка  -->
           <li class="prices__item">
-            <h3 class="title">Универсальное моющее средство для уборки после ремонта</h3>
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/1.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Карточка  -->
+          <li class="prices__item">
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/2.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Карточка  -->
+          <li class="prices__item">
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/3.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Карточка  -->
+          <li class="prices__item">
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/4.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Карточка  -->
+          <li class="prices__item">
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/5.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
+          </li>
+          <!-- Карточка  -->
+          <li class="prices__item">
+            <div class="prices__wrap">
+              <div class="prices__image">
+                <img src="img/product-cards/min/6.png" alt="фото" width="179" loading="lazy">
+              </div>
+              <div class="prices__details">
+                <h3 class="prices__name title">Универсальное моющее средство для уборки после ремонта</h3>
+                <span class="prices__price">от 221 руб.</span>
+                <div class="prices__buttons">
+                  <a class="button" href="#">Купить на ozon</a>
+                  <a class="button button--1" href="#">Купить на wildberries</a>
+                </div>
+              </div>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
   </main>
-  <script src="dist/js/main.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>

@@ -1,0 +1,28 @@
+.button {
+  border-radius: 24px;
+  text-align: center;
+  font-family: "Century Gothic";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: #005CFF;
+  padding: 14px 14px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s;
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.8;
+  }
+
+  &--1 {
+    background: #B3109C;
+  }
+}
