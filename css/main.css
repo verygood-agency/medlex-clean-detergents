@@ -249,6 +249,8 @@ input[type=radio].visually-hidden {
 .first-screen {
   background-image: linear-gradient(120deg, #f2f17a 0%, #f2f17a 50%, #a78de1 50%, #a78de1 100%);
   overflow: initial;
+  max-width: 100vw;
+  overflow: hidden;
   padding: 70px 0;
   position: relative;
   z-index: 2;
@@ -287,25 +289,26 @@ input[type=radio].visually-hidden {
 }
 .first-screen__bg-images .layer-1 {
   right: 5%;
-  top: -16%;
+  top: -8%;
 }
 .first-screen__bg-images .layer-2 {
-  right: 25%;
+  right: 23%;
 }
 .first-screen__bg-images .layer-3 {
   right: 10%;
+  z-index: 11;
 }
 .first-screen__bg-images .layer-4 {
-  right: 44%;
-  bottom: -70px;
+  right: 45%;
+  bottom: 0;
   top: auto;
 }
 .first-screen__bg-images .layer-5 {
-  right: 43%;
-  top: -7%;
+  right: 42%;
+  top: -3%;
 }
 .first-screen__bg-images .layer-6 {
-  right: -16%;
+  right: -20%;
 }
 .first-screen .title {
   max-width: 420px;

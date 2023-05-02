@@ -1,6 +1,8 @@
 .first-screen {
   background-image: linear-gradient(120deg, #f2f17a 0%, #f2f17a 50%, #a78de1 50%, #a78de1 100%);
   overflow: initial;
+  max-width: 100vw;
+  overflow: hidden;
 
   padding: 70px 0;
   position: relative;
@@ -40,25 +42,26 @@
     }
     .layer-1 {
       right: 5%;
-      top: -16%;
+      top: -8%;
     }
     .layer-2 {
-      right: 25%;
+      right: 23%;
     }
     .layer-3 {
       right: 10%;
+      z-index: 11;
     }
     .layer-4 {
-      right: 44%;
-      bottom: -70px;
+      right: 45%;
+      bottom: 0;
       top: auto;
     }
     .layer-5 {
-      right: 43%;
-      top: -7%;
+      right: 42%;
+      top:-3%;
     }
     .layer-6 {
-      right: -16%;
+      right: -20%;
     }
   }
 
