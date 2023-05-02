@@ -1,6 +1,7 @@
 .product-card {
   padding: 57px 0;
   background-color: #fff;
+  overflow: hidden;
 
   // &--1 {
   //   background-color: rgba(#ff9247, 0.25);
@@ -233,6 +234,35 @@
     right: 100%;
   }
   .product-cards__promo {
-    border-radius:  0 24px 24px 0;
+    border-radius: 0 24px 24px 0;
   }
+}
+
+@media (max-width: 1400px) {
+  .product-card {
+    padding: 42px 0;
+  }
+  .product-card__title {
+    padding-bottom: 32px;
+    margin-bottom: 24px;
+  }
+  .product-card__benefits {
+    gap: 8px;
+    grid-template-columns: 1fr;
+    margin-bottom: 32px;
+  }
+  .product-cards__promo {
+    font-size: 18px;
+  }
+  .product-cards__promo {
+    margin-bottom: 32px;
+  }
+  .product-cards__promo--wrap {
+    margin-bottom: 24px;
+  }
+  .product-card__photo img {
+    width: 85%;
+    margin: 0 auto;
+  }
+
 }

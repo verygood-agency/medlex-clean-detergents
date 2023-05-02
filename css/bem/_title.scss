@@ -8,4 +8,8 @@
   line-height: 1.2;
   color: #775da7;
   text-transform: uppercase;
+
+  @media (max-width: 1400px) {
+    font-size: 32px;
+  }
 }
