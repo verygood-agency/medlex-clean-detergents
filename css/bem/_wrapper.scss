@@ -4,8 +4,12 @@
   width: 100%;
   margin: 0 auto;
 
+  @media (max-width: 1200px) {
+    padding: 0 30px;
+  }
+
   @media (max-width: 768px) {
-    padding: 0 40px;
+    padding: 0 30px;
   }
 
   @media (max-width: 650px) {

@@ -44,3 +44,28 @@
     gap: 24px 32px;
   }
 }
+
+@media (max-width: 960px) {
+  .advantages {
+    padding: 50px 0;
+  }
+  .advantages__grid {
+    gap: 20px 24px;
+  }
+  .advantages__item {
+    font-size: 16px;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 715px) {
+  .advantages__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 450px) {
+  .advantages {
+    padding: 40px 0;
+}
+}

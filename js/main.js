@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", () => {
     floatAnimation(layer);
   });
 
-
+if (document.documentElement.clientWidth > 715) {
   gsap.utils.toArray('.product-card__photo img').forEach(photo => {
     gsap.from(photo, {
       opacity: 0,
@@ -66,6 +66,8 @@ document.addEventListener("DOMContentLoaded", () => {
       },
     });
   });
+}
+
 
   gsap.fromTo('.first-screen__logo', {
     opacity: 0,
