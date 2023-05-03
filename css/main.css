@@ -1,28 +1,28 @@
 @font-face {
-  font-family: "DIN Pro";
-  src: url("fonts/DINPro/DINPro.eot");
-  src: local("DIN Pro"), local("DINPro"), url("fonts/DINPro/DINPro.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro/DINPro.woff2") format("woff2"), url("fonts/DINPro/DINPro.woff") format("woff"), url("fonts/DINPro/DINPro.ttf") format("truetype");
+  font-family: "DINS Pro";
+  src: url("./fonts/DINPro/DINPro.eot");
+  src: local("DIN Pro"), local("DINPro"), url("./fonts/DINPro/DINPro.eot?#iefix") format("embedded-opentype"), url("./fonts/DINPro/DINPro.woff2") format("woff2"), url("./fonts/DINPro/DINPro.woff") format("woff"), url("./fonts/DINPro/DINPro.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
-  font-family: "DIN Pro";
-  src: url("fonts/DINPro/DINPro-Bold.eot");
-  src: local("DIN Pro Bold"), local("DINPro-Bold"), url("fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro/DINPro-Bold.woff2") format("woff2"), url("fonts/DINPro/DINPro-Bold.woff") format("woff"), url("fonts/DINPro/DINPro-Bold.ttf") format("truetype");
+  font-family: "DINS Pro";
+  src: url("./fonts/DINPro/DINPro-Bold.eot");
+  src: local("DIN Pro Bold"), local("DINPro-Bold"), url("./fonts/DINPro/DINPro-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/DINPro/DINPro-Bold.woff2") format("woff2"), url("./fonts/DINPro/DINPro-Bold.woff") format("woff"), url("./fonts/DINPro/DINPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal;
 }
 @font-face {
-  font-family: "DIN Pro";
-  src: url("fonts/DINPro/DINPro-Medium.eot");
-  src: local("DIN Pro Medium"), local("DINPro-Medium"), url("fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("fonts/DINPro/DINPro-Medium.woff2") format("woff2"), url("fonts/DINPro/DINPro-Medium.woff") format("woff"), url("fonts/DINPro/DINPro-Medium.ttf") format("truetype");
+  font-family: "DINS Pro";
+  src: url("./fonts/DINPro/DINPro-Medium.eot");
+  src: local("DIN Pro Medium"), local("DINPro-Medium"), url("./fonts/DINPro/DINPro-Medium.eot?#iefix") format("embedded-opentype"), url("./fonts/DINPro/DINPro-Medium.woff2") format("woff2"), url("./fonts/DINPro/DINPro-Medium.woff") format("woff"), url("./fonts/DINPro/DINPro-Medium.ttf") format("truetype");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Century Gothic";
-  src: url("../fonts/CenturyGothicCenturyGothic-Bold.eot");
-  src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("../fonts/CenturyGothicCenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/CenturyGothicCenturyGothic-Bold.woff2") format("woff2"), url("../fonts/CenturyGothicCenturyGothic-Bold.woff") format("woff"), url("../fonts/CenturyGothicCenturyGothic-Bold.ttf") format("truetype");
+  src: url("./fonts/CenturyGothicCenturyGothic-Bold.eot");
+  src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("./fonts/CenturyGothicCenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothicCenturyGothic-Bold.woff2") format("woff2"), url("./fonts/CenturyGothicCenturyGothic-Bold.woff") format("woff"), url("./fonts/CenturyGothicCenturyGothic-Bold.ttf") format("truetype");
   font-weight: 700;
   font-style: normal;
 }
@@ -45,7 +45,7 @@ body {
   font-style: normal;
   position: relative;
   overflow-x: hidden;
-  font-family: "DIN Pro";
+  font-family: "DINS Pro", sans-serif;
   font-size: 18px;
   line-height: 1.33;
   color: #000000;
@@ -172,7 +172,7 @@ input[type=number] {
 .title {
   display: block;
   margin: 0;
-  font-family: "DIN Pro";
+  font-family: "DINS Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -304,6 +304,8 @@ input[type=radio].visually-hidden {
   padding: 70px 0;
   position: relative;
   z-index: 2;
+  margin: 15px 24px;
+  border-radius: 24px;
 }
 .first-screen__logo {
   background: #ffffff;
@@ -370,6 +372,10 @@ input[type=radio].visually-hidden {
 }
 
 @media (max-width: 1400px) {
+  .first-screen {
+    margin: 0;
+    border-radius: 0;
+  }
   .first-screen__bg-images .layer-1,
   .first-screen__bg-images .layer-4,
   .first-screen__bg-images .layer-5 {
@@ -520,7 +526,7 @@ input[type=radio].visually-hidden {
   font-family: "Century Gothic", sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 22px;
+  font-size: 20px;
   line-height: 1.33;
   color: #000000;
   display: flex;
@@ -556,7 +562,7 @@ input[type=radio].visually-hidden {
 
 .product-cards__promo {
   display: block;
-  font-family: "DIN Pro";
+  font-family: "DINS Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;

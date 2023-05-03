@@ -31,41 +31,41 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 
 if (document.documentElement.clientWidth > 715) {
-  gsap.utils.toArray('.product-card__photo img').forEach(photo => {
-    gsap.from(photo, {
-      opacity: 0,
-      scale: 0.5,
-      // translateY: 50,
-      translateX: 50,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: photo,
-        start: 'top 90%',
-        end: 'bottom 20%',
-        scrub: true,
-        toggleActions: 'play none none reverse',
-      },
-    });
-  });
+  // gsap.utils.toArray('.product-card__photo img').forEach(photo => {
+  //   gsap.from(photo, {
+  //     opacity: 0,
+  //     scale: 0.5,
+  //     // translateY: 50,
+  //     translateX: 50,
+  //     duration: 1,
+  //     ease: 'power3.out',
+  //     scrollTrigger: {
+  //       trigger: photo,
+  //       start: 'top 90%',
+  //       end: 'bottom 20%',
+  //       scrub: true,
+  //       toggleActions: 'play none none reverse',
+  //     },
+  //   });
+  // });
 
-  gsap.utils.toArray('.product-card__details').forEach(photo => {
-    gsap.from(photo, {
-      opacity: 0,
-      scale: 0.5,
-      translateX: -50,
-      // translateX: 50,
-      duration: 1,
-      ease: 'power3.out',
-      scrollTrigger: {
-        trigger: photo,
-        start: 'top 90%',
-        end: 'bottom 10%',
-        scrub: true,
-        toggleActions: 'play none none reverse',
-      },
-    });
-  });
+  // gsap.utils.toArray('.product-card__details').forEach(photo => {
+  //   gsap.from(photo, {
+  //     opacity: 0,
+  //     scale: 0.5,
+  //     translateX: -50,
+  //     // translateX: 50,
+  //     duration: 1,
+  //     ease: 'power3.out',
+  //     scrollTrigger: {
+  //       trigger: photo,
+  //       start: 'top 90%',
+  //       end: 'bottom 10%',
+  //       scrub: true,
+  //       toggleActions: 'play none none reverse',
+  //     },
+  //   });
+  // });
 }
 
 

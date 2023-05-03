@@ -6,6 +6,10 @@
   padding: 70px 0;
   position: relative;
   z-index: 2;
+
+  margin: 15px 24px;
+  border-radius: 24px;
+
   &__logo {
     background: #ffffff;
     border-radius: 50%;
@@ -75,6 +79,10 @@
 }
 
 @media (max-width: 1400px) {
+  .first-screen {
+    margin: 0;
+    border-radius: 0;
+  }
   .first-screen__bg-images {
     .layer-1,
     .layer-4,
@@ -117,7 +125,6 @@
   .first-screen__bg-images {
     display: none;
   }
-
 }
 
 @media (max-width: 715px) {
