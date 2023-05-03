@@ -68,6 +68,17 @@ if (document.documentElement.clientWidth > 715) {
   // });
 }
 
+gsap.fromTo('.first-screen-dec', {
+  opacity: 0,
+  x: '100%',
+}, {
+  opacity: 1,
+  x: 0,
+  duration: 1.5,
+  ease: 'power3.out',
+});
+
+
 
   gsap.fromTo('.first-screen__logo', {
     opacity: 0,
