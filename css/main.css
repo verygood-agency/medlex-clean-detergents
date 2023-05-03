@@ -49,7 +49,6 @@ body {
   font-size: 18px;
   line-height: 1.33;
   color: #000000;
-  opacity: 0.8;
   max-width: 100vw;
 }
 
@@ -346,6 +345,7 @@ input[type=radio].visually-hidden {
   left: 0;
   right: 0;
   bottom: 0;
+  background-color: transparent;
 }
 .first-screen__bg-images img {
   position: absolute;
@@ -516,7 +516,7 @@ input[type=radio].visually-hidden {
   margin: 0;
   padding-bottom: 50px;
   margin-bottom: 40px;
-  color: #000000;
+  color: #775DA7;
   border-bottom: 1px solid;
   border-color: rgba(127, 106, 175, 0.6);
   position: relative;

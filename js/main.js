@@ -80,26 +80,26 @@ gsap.fromTo('.first-screen-dec', {
 
 
 
-  gsap.fromTo('.first-screen__logo', {
-    opacity: 0,
-    y: -50,
-  }, {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    ease: 'power3.out',
-  });
+  // gsap.fromTo('.first-screen__logo', {
+  //   opacity: 0,
+  //   y: -50,
+  // }, {
+  //   opacity: 1,
+  //   y: 0,
+  //   duration: 1,
+  //   ease: 'power3.out',
+  // });
 
-  gsap.fromTo(['.first-screen .title', '.first-screen .subtitle'], {
-    opacity: 0,
-    y: -50,
-  }, {
-    opacity: 1,
-    y: 0,
-    duration: 1,
-    ease: 'power3.out',
-    stagger: 0.2,
-  });
+  // gsap.fromTo(['.first-screen .title', '.first-screen .subtitle'], {
+  //   opacity: 0,
+  //   y: -50,
+  // }, {
+  //   opacity: 1,
+  //   y: 0,
+  //   duration: 1,
+  //   ease: 'power3.out',
+  //   stagger: 0.2,
+  // });
 
   gsap.fromTo('.advantages__item', {
     opacity: 0,
