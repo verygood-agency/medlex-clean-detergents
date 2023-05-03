@@ -6,6 +6,7 @@
 *.psd
 *.sublime*
 # dist/
+# textolite/
 node_modules/
 npm-debug.log*
 Thumbs.db
