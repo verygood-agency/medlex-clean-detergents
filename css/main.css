@@ -20,7 +20,7 @@
   font-style: normal;
 }
 @font-face {
-  font-family: "Century Gothic";
+  font-family: "Centurys Gothics";
   src: url("./fonts/CenturyGothicCenturyGothic-Bold.eot");
   src: local("Century Gothic Bold"), local("CenturyGothic-Bold"), url("./fonts/CenturyGothicCenturyGothic-Bold.eot?#iefix") format("embedded-opentype"), url("./fonts/CenturyGothicCenturyGothic-Bold.woff2") format("woff2"), url("./fonts/CenturyGothicCenturyGothic-Bold.woff") format("woff"), url("./fonts/CenturyGothicCenturyGothic-Bold.ttf") format("truetype");
   font-weight: 700;
@@ -61,7 +61,7 @@ input,
 textarea,
 a,
 button {
-  font-family: inherit;
+  font-family: "DINS Pro", sans-serif;
   font-size: inherit;
   line-height: inherit;
   letter-spacing: inherit;
@@ -127,7 +127,7 @@ input[type=number] {
 .button {
   border-radius: 24px;
   text-align: center;
-  font-family: "Century Gothic";
+  font-family: "DINS Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 13px;
@@ -552,7 +552,7 @@ input[type=radio].visually-hidden {
   margin-bottom: 50px;
 }
 .product-card__benefits li {
-  font-family: "Century Gothic", sans-serif;
+  font-family: "DINS Pro", sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
